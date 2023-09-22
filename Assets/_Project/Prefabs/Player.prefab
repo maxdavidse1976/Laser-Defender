@@ -160,3 +160,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f51111308640d954e8d7fb78ee3c5d43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _playerSpeed: 5
+  _paddingLeft: 0.5
+  _paddingRight: 0.5
+  _paddingTop: 5
+  _paddingBottom: 2
