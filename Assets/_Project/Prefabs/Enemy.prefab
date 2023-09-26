@@ -125,7 +125,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _health: 50
-  _hitEffect: {fileID: 434168556507867692, guid: 6c58b1c5431484741b57ae616c135be0, type: 3}
+  _hitEffect: {fileID: 434168556507867692, guid: abba8fd952047634b95cc1e430b5d53d, type: 3}
+  _destroyEffect: {fileID: 5186666152907907928, guid: 4eb9f3bba331e5a48973d220d5a1b898, type: 3}
 --- !u!114 &-7384064352297304412
 MonoBehaviour:
   m_ObjectHideFlags: 0
