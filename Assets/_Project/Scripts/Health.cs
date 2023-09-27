@@ -8,10 +8,12 @@ public class Health : MonoBehaviour
     [SerializeField] bool _applyCameraShake;
 
     CameraShake _cameraShake;
+    AudioPlayer _audioPlayer;
 
     private void Awake()
     {
         _cameraShake = Camera.main.GetComponent<CameraShake>();
+        _audioPlayer = FindObjectOfType<AudioPlayer>();
     }
     void OnTriggerEnter2D(Collider2D collision)
     {
@@ -30,11 +32,13 @@ public class Health : MonoBehaviour
         if (_health <= 0)
         {
             PlayDestroyEffect();
+            _audioPlayer.PlayExplodeClip();
             Destroy(gameObject);
         }
         else
         {
             PlayHitEffect();
+            _audioPlayer.PlayDamageClip();
         }
     }
 
