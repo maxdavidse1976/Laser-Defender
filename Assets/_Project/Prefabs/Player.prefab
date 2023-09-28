@@ -246,6 +246,9 @@ MonoBehaviour:
   _health: 50
   _hitEffect: {fileID: 434168556507867692, guid: abba8fd952047634b95cc1e430b5d53d, type: 3}
   _destroyEffect: {fileID: 5186666152907907928, guid: 4eb9f3bba331e5a48973d220d5a1b898, type: 3}
+  _applyCameraShake: 1
+  _isPlayer: 1
+  score: 0
 --- !u!114 &6683366882826678295
 MonoBehaviour:
   m_ObjectHideFlags: 0
