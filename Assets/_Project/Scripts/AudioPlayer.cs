@@ -12,8 +12,6 @@ public class AudioPlayer : MonoBehaviour
     [SerializeField] AudioClip _explodeClip;
     [SerializeField] [Range(0f, 1f)] float _explodeVolume = 1f;
 
-    private Vector3 _audioClipPosition = Camera.main.transform.position;
-
     public void PlayShootingClip()
     {
         PlayClip(_shootingClip, _shootingVolume);
@@ -33,7 +31,8 @@ public class AudioPlayer : MonoBehaviour
     {
         if (clip != null)
         {
-            AudioSource.PlayClipAtPoint(clip, _audioClipPosition, volume);
+            Vector3 audioClipPosition = Camera.main.transform.position;
+            AudioSource.PlayClipAtPoint(clip, audioClipPosition, volume);
         }
     }
 }
