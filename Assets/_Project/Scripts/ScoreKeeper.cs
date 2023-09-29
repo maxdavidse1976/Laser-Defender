@@ -10,6 +10,7 @@ public class ScoreKeeper : MonoBehaviour
     {
         _currentScore += score;
         Mathf.Clamp(_currentScore, 0, int.MaxValue);
+        UIController.Instance.UpdateCurrentScore(_currentScore);
     }
 
     public void ResetScore() => _currentScore = 0;

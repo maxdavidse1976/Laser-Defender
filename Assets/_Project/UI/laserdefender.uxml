@@ -1,0 +1,22 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="PlayerInformation" style="flex-grow: 1; background-color: rgba(29, 29, 29, 0.67); width: 100%; height: 5%; flex-direction: row; -unity-font-definition: initial; -unity-font: url(&apos;project://database/Assets/_Project/Fonts/Kenney%20Future.ttf?fileID=12800000&amp;guid=fefde7453d3817f4aac2797da290a413&amp;type=3#Kenney Future&apos;); font-size: 12px; -unity-background-image-tint-color: rgba(135, 135, 135, 0.86); color: rgb(255, 255, 255);">
+        <ui:VisualElement name="PlayerHealth" style="flex-grow: 1; background-color: rgba(85, 85, 85, 0); background-image: none; height: 100%; width: 30%; flex-direction: row;">
+            <ui:Label tabindex="-1" text="HEALTH" display-tooltip-when-elided="true" name="HealthLabel" style="width: 40%; margin-right: 2px; margin-top: 2px; margin-bottom: 2px; -unity-text-align: middle-left;" />
+            <ui:VisualElement name="CurrentHealthContainer" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); width: 60%; margin-left: 10px; margin-right: 10px; margin-top: 10px; margin-bottom: 10px;">
+                <ui:VisualElement name="CurrentHealth" style="flex-grow: 1; background-color: rgb(255, 0, 0); width: 100%; margin-top: 5px; margin-bottom: 5px; margin-left: 0; margin-right: 0; padding-left: 10px; padding-right: 10px; padding-top: 10px; padding-bottom: 10px;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="PlayerScore" style="flex-grow: 1; background-color: rgba(255, 233, 0, 0); width: 30%; height: 100%; flex-direction: row;">
+            <ui:Label tabindex="-1" text="SCORE" display-tooltip-when-elided="true" name="ScoreLabel" style="-unity-text-align: middle-left; width: 40%; margin-left: 2px; margin-right: 2px; margin-top: 2px; margin-bottom: 2px;" />
+            <ui:Label tabindex="-1" text="Label" display-tooltip-when-elided="true" name="CurrentScore" style="-unity-text-align: middle-left; width: 60%; margin-left: 2px; margin-right: 2px; margin-top: 2px; margin-bottom: 2px; color: rgba(0, 255, 212, 0.59); -unity-text-outline-width: 1px; -unity-text-outline-color: rgb(0, 255, 126);" />
+        </ui:VisualElement>
+        <ui:VisualElement name="CurrentLevel" style="flex-grow: 1; background-color: rgba(0, 46, 255, 0); width: 30%; height: 100%; flex-direction: row;">
+            <ui:Label tabindex="-1" text="LEVEL" display-tooltip-when-elided="true" name="LevelLabel" style="-unity-text-align: middle-left; width: 40%; margin-left: 2px; margin-right: 2px; margin-top: 2px; margin-bottom: 2px;" />
+            <ui:Label tabindex="-1" text="Label" display-tooltip-when-elided="true" name="CurrentLevel" style="-unity-text-align: middle-left; width: 60%; margin-left: 2px; margin-right: 2px; margin-top: 2px; margin-bottom: 2px; -unity-text-outline-width: 1px; -unity-text-outline-color: rgb(0, 255, 126); color: rgba(0, 255, 212, 0.59);" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="BossLife" style="flex-grow: 1; background-color: rgb(255, 0, 0); width: 100%; height: 2%; opacity: 1; display: flex;">
+        <ui:Label tabindex="-1" text="100%" display-tooltip-when-elided="true" name="BossHealth" style="-unity-font: url(&apos;project://database/Assets/_Project/Fonts/Kenney%20Space.ttf?fileID=12800000&amp;guid=5e11394662ec4724b826df75fa37014c&amp;type=3#Kenney Space&apos;); font-size: 10px; -unity-text-align: upper-center; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 1px; padding-bottom: 1px; -unity-font-style: normal; -unity-font-definition: initial;" />
+    </ui:VisualElement>
+    <ui:VisualElement name="EmptySpace" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); width: 100%; height: 93%;" />
+</ui:UXML>

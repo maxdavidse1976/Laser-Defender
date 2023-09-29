@@ -13,12 +13,14 @@ public class Health : MonoBehaviour
     CameraShake _cameraShake;
     AudioPlayer _audioPlayer;
     ScoreKeeper _scoreKeeper;
+    UIController _uiController;
 
     void Awake()
     {
         _cameraShake = Camera.main.GetComponent<CameraShake>();
         _audioPlayer = FindObjectOfType<AudioPlayer>();
         _scoreKeeper = FindObjectOfType<ScoreKeeper>();
+        _uiController = FindObjectOfType<UIController>();
     }
     void OnTriggerEnter2D(Collider2D collision)
     {
@@ -34,6 +36,7 @@ public class Health : MonoBehaviour
     void TakeDamage(int damage)
     {
         _health -= damage;
+        _uiController.UpdateCurrentHealth(_health);
         if (_health <= 0)
         {
             Die();
@@ -82,5 +85,8 @@ public class Health : MonoBehaviour
         }
     }
 
-    public int GetHealth => _health;
+    public int GetHealth()
+    {
+        return _health;
+    }
 }
